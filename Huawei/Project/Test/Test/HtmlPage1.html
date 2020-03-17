@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Simple jqGrid Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/css/ui.jqgrid.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/jquery.jqgrid.min.js"></script>
+    <script>
+    //<![CDATA[
+    $(function () {
+        "use strict";
+        $("#grid").jqGrid({
+            colModel: [
+                { name: "firstName" },
+                { name: "lastName" }
+            ],
+            data: [
+                { firstName: "Zinedine", lastName: "Zidane" },
+                { firstName: "Oliver", lastName: "Kahn" },
+                { firstName: "David", lastName: "Beckham" },
+                { firstName: "Lionel", lastName: "Messi" },
+                { firstName: "Cristiano", lastName: "Ronaldo" }
+            ]
+        });
+    });
+    //]]>
+    </script>
+</head>
+<body>
+    <table id="grid"></table>
+</body>
+</html>
